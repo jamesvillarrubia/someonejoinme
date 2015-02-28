@@ -21,6 +21,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
+  //Adds the Facebook login
+  openFB.init({appId: '414491782049873'});
+
   $stateProvider
 
   .state('app', {
