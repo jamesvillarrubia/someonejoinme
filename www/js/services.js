@@ -153,4 +153,20 @@ angular.module('someonejoinme.services', ['firebase'])
             console.log(markers);
         }
     }
+})
+.factory('Cap_one', function ($firebase) {
+    // Might use a resource here that returns a JSON array
+    var ref = new Firebase(firebaseUrl);
+    var markers = $firebase(ref.child('cap_one')).$asArray();
+
+    return {
+        all: function () {
+            return markers;
+        },
+        get: function (markerId) {
+            // Simple index lookup
+            return markers.$getRecord(markerId);
+            console.log(markers);
+        }
+    }
 });

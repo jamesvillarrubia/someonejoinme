@@ -80,3 +80,40 @@
   .scroll-content-notlogin {
     background: #fff;
   }
+
+
+a[icon-on="ion-ios7-chatboxes"]{
+  display:none;
+}
+
+.item-icon-left{
+  padding:0px 0px;
+}
+
+.item-icon-left h2{
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: 400;
+  height:70px;
+  display:inline-block;
+  line-height: 70px;
+  font-size:15px !important;
+  font-family: Verdana;
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+ion-item.item-icon-left img{
+  float:left;
+  display:inline-block;
+  height:70px;
+}
+ion-item.item-icon-left h2{
+  float:left;
+  padding-left:20px;
+  display: inline-block;
+}
+
+ion-nav-view[name="tab-chat"] .scroll-content{
+  background-color: rgb(241, 241, 241);
+  background-image: none;
+}
