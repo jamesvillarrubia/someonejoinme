@@ -80,7 +80,7 @@ angular.module('someonejoinme.controllers', [])
 
     // Fetching Chat Records only if a Room is Selected
     if (roomName) {
-        $scope.roomName = " - " + roomName;
+        $scope.roomName = roomName;
         $scope.chats = Chats.all();
     }
 
