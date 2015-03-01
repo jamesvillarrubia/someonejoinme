@@ -1,7 +1,7 @@
 {
-  "name": "ionic-firebase",
+  "name": "someonejoinme",
   "version": "1.0.0",
-  "description": "ionic-firebase: An Ionic project",
+  "description": "someonejoinme",
   "dependencies": {
     "angular-moment": "^0.9.0",
     "gulp": "^3.5.6",

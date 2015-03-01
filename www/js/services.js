@@ -78,6 +78,7 @@ angular.module('someonejoinme.services', ['firebase'])
         get: function (roomId) {
             // Simple index lookup
             return rooms.$getRecord(roomId);
+            console.log(rooms);
         }
     }
 });

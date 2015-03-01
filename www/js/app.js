@@ -1,7 +1,7 @@
 // someonejoinme App - Ionic & Firebase Demo
 
 //var firebaseUrl = "https://sizzling-inferno-3944.firebaseio.com";
-var firebaseUrl = "https://fiery-torch-9285.firebaseio.com"
+var firebaseUrl = "https://fiery-torch-9285.firebaseio.com";
 
 function onDeviceReady() {
     angular.bootstrap(document, ["someonejoinme"]);

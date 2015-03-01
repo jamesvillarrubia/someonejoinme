@@ -1,0 +1,94 @@
+{
+  "rooms" : [ null, {
+        "chats" : {
+          "-JjHXrIWnJ4rO7dIOWvb" : {
+            "createdAt" : 1425166529814,
+            "from" : "Bobby Flay",
+            "message" : "test"
+          }
+        },
+        "user_1":"simplelogin:3",
+        "user_2":"simplelogin:5",
+        "id" : "1",
+        "name" : "1"
+      },{
+        "id" : "2",
+        "user_1":"simplelogin:3",
+        "user_2":"simplelogin:4",
+        "name" : "2",
+        "chats":{
+          "-JjHXrIWnJ4rO7dIOWvb" : {
+            "createdAt" : 1425166529814,
+            "from" : "Bobby Flay",
+            "message" : "test"
+          }
+        }
+      }
+    ],
+
+  "users" : {
+    "simplelogin:3" : {
+      "displayName" : "James Villarrubia",
+      "email" : "jav2j@virginia.edu"
+    },
+    "simplelogin:4" : {
+      "displayName" : "Bobby Flay",
+      "email" : "james.villarrubia@gmail.com"
+    },
+    "simplelogin:5" : {
+      "displayName" : "Glen Wise",
+      "email" : "gwise@andrew.cmu.edu"
+    },
+    "simplelogin:6" : {
+      "displayName" : "Akshay Goradia",
+      "email" : "agoradia@andrew.cmu.edu"
+    }
+  },
+
+  "facebook" : {
+      "simplelogin:3":
+          {
+             "id": "220439",
+             "first_name": "Bret",
+             "gender": "male",
+             "last_name": "Taylor",
+             "link": "https://www.facebook.com/btaylor",
+             "locale": "en_US",
+             "name": "Bret Taylor",
+             "username": "btaylor"
+          },
+      "simplelogin:4" : 
+          {
+             "id": "220439",
+             "first_name": "Bret",
+             "gender": "male",
+             "last_name": "Taylor",
+             "link": "https://www.facebook.com/btaylor",
+             "locale": "en_US",
+             "name": "Bret Taylor",
+             "username": "btaylor"
+          },
+      "simplelogin:5" : 
+          {
+             "id": "220439",
+             "first_name": "Bret",
+             "gender": "male",
+             "last_name": "Taylor",
+             "link": "https://www.facebook.com/btaylor",
+             "locale": "en_US",
+             "name": "Bret Taylor",
+             "username": "btaylor"
+          },
+      "simplelogin:6" : 
+          {
+             "id": "220439",
+             "first_name": "Bret",
+             "gender": "male",
+             "last_name": "Taylor",
+             "link": "https://www.facebook.com/btaylor",
+             "locale": "en_US",
+             "name": "Bret Taylor",
+             "username": "btaylor"
+          }
+  }
+}
