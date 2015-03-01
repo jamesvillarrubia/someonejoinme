@@ -70,6 +70,8 @@ angular.module('someonejoinme.services', ['firebase'])
     // Might use a resource here that returns a JSON array
     var ref = new Firebase(firebaseUrl);
     var rooms = $firebase(ref.child('rooms')).$asArray();
+    var users = $firebase(ref.child('users')).$asArray();
+    var markers = $firebase(ref.child('markers')).$asArray();
 
     return {
         all: function () {
@@ -79,6 +81,23 @@ angular.module('someonejoinme.services', ['firebase'])
             // Simple index lookup
             return rooms.$getRecord(roomId);
             console.log(rooms);
+        }
+    }
+})
+
+.factory('Markers', function ($firebase) {
+    // Might use a resource here that returns a JSON array
+    var ref = new Firebase(firebaseUrl);
+    var markers = $firebase(ref.child('markers')).$asArray();
+
+    return {
+        all: function () {
+            return markers;
+        },
+        get: function (markerId) {
+            // Simple index lookup
+            return markers.$getRecord(markerId);
+            console.log(markers);
         }
     }
 });

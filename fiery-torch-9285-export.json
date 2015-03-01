@@ -44,7 +44,36 @@
       "email" : "agoradia@andrew.cmu.edu"
     }
   },
-
+  "markers":[null,
+    {
+      "id":"1",
+      "user":"simplelogin:3",
+      "timestamp":1425166529814,
+      "lat":"38.0379665",
+      "lon":"-78.4870446"
+    },
+    {
+      "id":"2",
+      "user":"simplelogin:4",
+      "timestamp":1425166529814,
+      "lat":"38.0292624",
+      "lon":"-78.4818304"
+    },
+    {
+      "id":"3",
+      "user":"simplelogin:5",
+      "timestamp":1425166529814,
+      "lat":"38.0341892",
+      "lon":"-78.4952521"
+    },
+    {
+      "id":"4",
+      "user":"simplelogin:6",
+      "timestamp":1425166529814,
+      "lat":"38.0294568",
+      "lon":"-78.510015"
+    }
+  ],
   "facebook" : {
       "simplelogin:3":
           {

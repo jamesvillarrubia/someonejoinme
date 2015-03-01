@@ -98,29 +98,24 @@ angular.module('someonejoinme.controllers', [])
 .controller('RoomsCtrl', function ($scope, Rooms, Chats, $state) {
     //console.log("Rooms Controller initialized");
     $scope.rooms = Rooms.all();
-
+    console.log($scope.rooms);
     $scope.openChatRoom = function (roomId) {
         $state.go('tab.chat', {
             roomId: roomId
         });
     }
 })
-/*
-.controller('MapCtrl', function ($scope, Rooms, Chats, $state) {
-    //console.log("Rooms Controller initialized");
-    $scope.rooms = Rooms.all();
 
-    $scope.openChatRoom = function (roomId) {
-        $state.go('tab.chat', {
-            roomId: roomId
-        });
-    }
-});
-*/
- .controller('MapCtrl', function($scope, $ionicLoading, $compile) {
+
+ .controller('MapCtrl', function($scope, $ionicLoading, $compile, Markers, Rooms, $state) {
+      
+
       function initialize() {
-        var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
-        
+
+        //TODO: Set this lat long to phone location
+        var myLatlng = new google.maps.LatLng(38.0379665,-78.4870446);
+    
+
         var mapOptions = {
           center: myLatlng,
           zoom: 16,
@@ -137,20 +132,50 @@ angular.module('someonejoinme.controllers', [])
           content: compiled[0]
         });
 
+
+        google.maps.event.addListenerOnce(map, 'idle', function(){
+            $scope.addMarkers();
+        });
+
+/*
         var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
           title: 'Uluru (Ayers Rock)'
         });
-
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map,marker);
-        });
+*/
+        console.log('Markers');
+        console.log(Markers);
+        console.log('Rooms');
+        console.log(Rooms);
 
         $scope.map = map;
       }
+
+
       ionic.Platform.ready(initialize);
-      
+    
+    
+      $scope.addMarkers = function(){
+        if(!$scope.map){
+            return;
+        }
+        var list = Markers.all();
+        var mark_array = [];
+        for (i = 0; i < list.length; i++) {
+            var newmark = new google.maps.LatLng(list[i].lat,list[i].lon);
+            mark_array[i] = new google.maps.Marker({
+              position: newmark,
+              map: $scope.map,
+              title: 'yes'
+            });
+            google.maps.event.addListener(mark_array[i], 'click', function() {
+              infowindow.open(map,marker);
+            });
+        }
+        //$scope.centerOnMe();
+      };
+
       $scope.centerOnMe = function() {
         if(!$scope.map) {
           return;
