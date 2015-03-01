@@ -1,5 +1,5 @@
-<ion-view view-title="Rooms">
-    <ion-content>
+<ion-view view-title="Messages">
+    <ion-content class="scroll-content-notlogin">
         <ion-list ng-show="rooms">
             <ion-item class="item-icon-left" ng-repeat="room in rooms" type="item-text-wrap" ng-click="openChatRoom(room.id)">
                 <img src="{{room.icon}}"/>
@@ -8,7 +8,7 @@
         </ion-list>
         <ion-list ng-hide="rooms.length">
             <ion-item class="textCenter">
-                <i class="icon ion-loading-c"></i> Loading Rooms
+                <i class="icon ion-loading-c"></i> Loading Messages...
             </ion-item>
         </ion-list>
     </ion-content>

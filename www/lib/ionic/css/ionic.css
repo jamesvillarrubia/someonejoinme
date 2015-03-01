@@ -3023,6 +3023,7 @@ body.grade-c {
     overflow: hidden;
     margin-top: -1px;
 }
+
 /**
  * Scroll is the scroll view component available for complex and custom
  * scroll view functionality.
@@ -3569,11 +3570,11 @@ a.subdued:last-child {
     width: 100%;
     border-radius: 0;
     background-color: transparent;
-    color: #387ef5;
+    color: #CC0000;
     font-size: 18px;
 }
 .action-sheet .button.destructive {
-    color: #ef473a;
+    color: #CC0000;
 }
 .action-sheet-title {
     padding: 10px;
@@ -3742,8 +3743,8 @@ a.subdued:last-child {
     background-image: linear-gradient(180deg, #0a9ec7, #0a9ec7 50%, transparent 50%);
 }
 .bar.bar-assertive {
-    border-color: #e42012;
-    background-color: #ef473a;
+    border-color: #B70000;
+    background-color: #CC0000;
     background-image: linear-gradient(0deg, #e42012, #e42012 50%, transparent 50%);
     color: #fff;
 }
@@ -8057,8 +8058,8 @@ progress {
     color: #fff;
 }
 .button.button-positive {
-    border-color: #0c63ee;
-    background-color: #387ef5;
+    border-color: #B70000;
+    background-color: #CC0000;
     color: #fff;
 }
 .button.button-positive:hover {
@@ -8067,24 +8068,24 @@ progress {
 }
 .button.button-positive.active,
 .button.button-positive.activated {
-    border-color: #0c63ee;
-    background-color: #0c63ee;
+    border-color: #B70000;
+    background-color: #B70000;
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .button.button-positive.button-clear {
     border-color: transparent;
     background: none;
     box-shadow: none;
-    color: #387ef5;
+    color: #B70000;
 }
 .button.button-positive.button-icon {
     border-color: transparent;
     background: none;
 }
 .button.button-positive.button-outline {
-    border-color: #387ef5;
+    border-color: #B70000;
     background: transparent;
-    color: #387ef5;
+    color: #B70000;
 }
 .button.button-positive.button-outline.active,
 .button.button-positive.button-outline.activated {
