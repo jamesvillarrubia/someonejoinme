@@ -1,31 +1,50 @@
 {
   "rooms" : [ null, {
+        "id" : "1",
         "chats" : {
           "-JjHXrIWnJ4rO7dIOWvb" : {
             "createdAt" : 1425166529814,
             "from" : "Bobby Flay",
-            "message" : "test"
+            "message" : "test 1"
           }
-        },
-        "user_1":"simplelogin:3",
-        "user_2":"simplelogin:5",
-        "id" : "1",
-        "name" : "1"
+        }
       },{
         "id" : "2",
-        "user_1":"simplelogin:3",
-        "user_2":"simplelogin:4",
-        "name" : "2",
         "chats":{
           "-JjHXrIWnJ4rO7dIOWvb" : {
             "createdAt" : 1425166529814,
             "from" : "Bobby Flay",
-            "message" : "test"
+            "message" : "test 2"
+          }
+        }
+      },{
+        "id" : "3",
+        "chats":{
+          "-JjHXrIWnJ4rO7dIOWvb" : {
+            "createdAt" : 1425166529814,
+            "from" : "Bobby Flay",
+            "message" : "test 3"
+          }
+        }
+      },{
+        "id" : "4",
+        "chats":{
+          "-JjHXrIWnJ4rO7dIOWvb" : {
+            "createdAt" : 1425166529814,
+            "from" : "Bobby Flay",
+            "message" : "test 4"
           }
         }
       }
-    ],
-
+  ],
+  "permissions": {
+    "simplelogin:7":[
+      {"partner":"simplelogin:3","chat":"1"},
+      {"partner":"simplelogin:4","chat":"2"},
+      {"partner":"simplelogin:5","chat":"3"},
+      {"partner":"simplelogin:6","chat":"4"}
+    ]
+  },
   "users" : {
     "simplelogin:3" : {
       "displayName" : "James Villarrubia",
@@ -42,36 +61,48 @@
     "simplelogin:6" : {
       "displayName" : "Akshay Goradia",
       "email" : "agoradia@andrew.cmu.edu"
+    },
+    "simplelogin:7" : {
+      "displayName" : "abc",
+      "email" : "a@a.com"
     }
   },
   "markers":[null,
     {
       "id":"1",
       "user":"simplelogin:3",
+      "email" : "jav2j@virginia.edu",
       "timestamp":1425166529814,
       "lat":"38.0379665",
-      "lon":"-78.4870446"
+      "lon":"-78.4870446",
+      "profPic":"https://scontent-iad.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10341993_728754330481268_2145922882398806315_n.jpg?oh=d84d3ede11bf7c1c0b203eb19d57f285&oe=558AAF8F"
     },
     {
       "id":"2",
       "user":"simplelogin:4",
+      "email" : "james.villarrubia@gmail.com",
       "timestamp":1425166529814,
       "lat":"38.0292624",
-      "lon":"-78.4818304"
+      "lon":"-78.4818304",
+       "profPic":"https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/t31.0-1/c250.0.1000.1000/10498628_10101651446849086_6042784863893875418_o.jpg"
     },
     {
       "id":"3",
       "user":"simplelogin:5",
       "timestamp":1425166529814,
       "lat":"38.0341892",
-      "lon":"-78.4952521"
+      "email" : "gwise@andrew.cmu.edu",
+      "lon":"-78.4952521",
+       "profPic":"https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/11016813_10155285678385613_5435456263359104956_n.jpg?oh=ef371de2e82c088ca8cc5f8868ea1688&oe=55912C10&__gda__=1435401071_0c94291521396bf1d07d2a345a961628"
     },
     {
       "id":"4",
       "user":"simplelogin:6",
       "timestamp":1425166529814,
       "lat":"38.0294568",
-      "lon":"-78.510015"
+      "email" : "agoradia@andrew.cmu.edu",
+      "lon":"-78.510015",
+       "profPic":"https://scontent-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/522352_217879161676676_1072520012_n.jpg?oh=385aa9c72d6c9b2e72fb0dde21ee0146&oe=5583E28D"
     }
   ],
   "facebook" : {

@@ -95,10 +95,21 @@ angular.module('someonejoinme.controllers', [])
     }
 })
 
-.controller('RoomsCtrl', function ($scope, Rooms, Chats, $state) {
+.controller('RoomsCtrl', function ($scope, Rooms, $firebaseAuth, $firebase, Chats, $state) {
     //console.log("Rooms Controller initialized");
-    $scope.rooms = Rooms.all();
+    //$scope.rooms = Rooms.all();
+    var ref = new Firebase(firebaseUrl);
+    var auth = $firebaseAuth(ref);
+    var authData = auth.$getAuth();
+    var uid = authData.uid;
+    var fire_ref = $firebase(ref).$asArray();
+
+    fire_ref.$loaded().then(function() {
+        $scope.rooms = Rooms.getwithuid(fire_ref);
+    });
+
     console.log($scope.rooms);
+
     $scope.openChatRoom = function (roomId) {
         $state.go('tab.chat', {
             roomId: roomId
